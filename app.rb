@@ -18,7 +18,9 @@ class App < Sinatra::Base
     @center = params["c"]
     erb :team
   end
-  
+  error do
+  'Sorry there was a nasty error - ' + env['sinatra.error'].message
+  end
   post '/status' do
     status 404
     @page = Page::BasicPage.new(title: 'Page Not Found - 404')
