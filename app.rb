@@ -1,6 +1,7 @@
 require 'sinatra/base'
 set :show_exceptions, after_handler
 
+
 class App < Sinatra::Base
   
   get '/newteam' do
