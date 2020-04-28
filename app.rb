@@ -3,7 +3,7 @@ set :show_exceptions, after_handler
 
 error Document::NoFilesFoundError Document
 status 404
-@page = Page::BasicPage
+@page = Page::BasicPage.new
 
 class App < Sinatra::Base
   
