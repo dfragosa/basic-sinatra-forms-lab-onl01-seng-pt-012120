@@ -19,7 +19,8 @@ class App < Sinatra::Base
     erb :team
   end
   
-  post '/status/'
-
+  post '/status/' do
+    
+  end
   
 end
