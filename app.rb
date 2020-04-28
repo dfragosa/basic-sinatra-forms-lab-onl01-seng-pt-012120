@@ -21,6 +21,7 @@ class App < Sinatra::Base
   
   post '/status' do
     status 404
+    @page = Page::BasicPage.new(title: 'Page Not Found - 404')
     erb :team
   end
   
