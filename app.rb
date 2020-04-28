@@ -1,5 +1,5 @@
 require 'sinatra/base'
-set :show
+set :show_exceptions
 
 class App < Sinatra::Base
   
