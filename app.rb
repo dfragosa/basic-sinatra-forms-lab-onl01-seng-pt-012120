@@ -1,11 +1,6 @@
 require 'sinatra/base'
 set :show_exceptions, after_handler
 
-error Document::NoFilesFoundError Document
-status 404
-@page = Page::BasicPage.new(title: 'Page Not Found =404')
-erb :fourohfour
-end
 
 class App < Sinatra::Base
   
@@ -23,5 +18,12 @@ class App < Sinatra::Base
     @center = params["c"]
     erb :team
   end
+  
+  error Document::NoFilesFoundError Document
+    status 404
+@page = Page::BasicPage.new(title: 'Page Not Found =404')
+erb :fourohfour
+end
 
+  
 end
