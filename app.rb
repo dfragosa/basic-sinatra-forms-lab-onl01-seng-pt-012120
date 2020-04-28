@@ -1,7 +1,7 @@
 require 'sinatra/base'
 set :show_exceptions, after_handler
 
-error Document::NoFilesFi
+error Document::NoFilesFoundError
 
 class App < Sinatra::Base
   
