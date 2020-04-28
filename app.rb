@@ -20,6 +20,7 @@ class App < Sinatra::Base
   end
   
   post '/status' do
+    status 404
     erb :team
   end
   
