@@ -19,12 +19,8 @@ class App < Sinatra::Base
     erb :team
   end
   
-  error Document::NoFilesFoundError Document
-    status 404
-    @page = Page::BasicPage.new(title: 'Page Not Found =404')
-    erb :fourohfour
+  post '/status' do
+    erb :status
   end
-end
-
   
 end
