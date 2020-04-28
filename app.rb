@@ -4,7 +4,7 @@ set :show_exceptions, after_handler
 error Document::NoFilesFoundError Document
 status 404
 @page = Page::BasicPage.new(title: 'Page Not Found =404')
-erb 
+erb :
 
 class App < Sinatra::Base
   
