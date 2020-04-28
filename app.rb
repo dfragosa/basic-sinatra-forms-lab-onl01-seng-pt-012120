@@ -20,7 +20,7 @@ class App < Sinatra::Base
   end
   
   post '/status' do
-    erb :status
+    erb :team
   end
   
 end
