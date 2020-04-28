@@ -23,7 +23,8 @@ class App < Sinatra::Base
     status 404
     @page = Page::BasicPage.new(title: 'Page Not Found =404')
     erb :fourohfour
-  
+  end
+end
 
   
 end
