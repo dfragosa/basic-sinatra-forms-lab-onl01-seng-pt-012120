@@ -1,5 +1,5 @@
 require 'sinatra/base'
-set
+set :show
 
 class App < Sinatra::Base
   
